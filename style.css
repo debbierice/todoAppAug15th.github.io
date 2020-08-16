@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.showImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  animation-name: photo;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+}
+
+.weather {
+  font-family: 'Manrope', sans-serif;
+  color: #fff;
+  display: flex;
+  margin: 10px 0 0 20px;
+}
+
+.weather p {
+  font-size: 12px;
+  position: absolute;
+  top: 65px;
+  font-weight: 600;
+}
+
+.weather div:nth-child(2) {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  letter-spacing: 0.09rem;
+}
+
+.my-location {
+  font-size: 16px;;
+}
+
+.weather div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  width: 70px;
+}
+
+input,
+textarea,
+[contenteditable] {
+  caret-color: #fff;
+  font-size: 30px;
+}
+
+.clock-greeting {
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transform: translateY(120%);
+}
+
+.clock-greeting input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 500px;
+  text-align: center;
+}
+
+.clock-greeting input, textarea{
+  color:  #EAEBED;
+  font-size: 30px;
+}
+
+.clock-greeting input::placeholder{
+  color: #EAEBED;
+  font-size: 25px;
+}
+
+.clock {
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  align-items: baseline;
+  color: #fff;
+}
+
+.clock h1 {
+  font-size: 150px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.clock p {
+  font-size: 50px;
+}
+
+.greeting-message {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: lighter;
+  color: #fff;
+  position: relative;
+  bottom: 20px;
+  letter-spacing: 0.09rem;
+}
+
+button {
+  margin: 0 8px;
+  width: 22px;
+  height: 22px;
+  background: transparent url("assets/tick.png") no-repeat center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-list input{
+  background-color: rgba(221, 221, 221, 0.61);
+  padding: 4px 0 7px 0; 
+  border-radius: 12px;
+  width: 400px;
+}
+
+.todo-list input::placeholder {
+  font-size: 20px;
+}
+
+.todo-list-board {
+  background-color:rgba(95, 95, 95, 0.363);
+  width: 250px;
+  position: absolute;
+  top: 110px;
+  right: 20px;
+  padding: 12px 0 9px 5px;
+  overflow: auto;
+  border-radius: 5px;;
+
+}
+.todo-list-board ul {
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0.1rem;
+  padding-left: 0;
+}
+
+.todo-list-board li {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.todo-list-ul button:hover{
+  opacity: 0.7;
+}
+
+.todo {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top: 85px;
+  right: 40px;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.social-icon {
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  top: 30px;
+  right: 12px;
+  display: flex;
+  bottom: 50%;
+}
+
+.social-icon img {
+  width: 25px;
+  height: 100%;
+  margin: 0 15px 0 15px;
+}
+
+.social-icon img:hover {
+  opacity: 0.6;
+}
+
+.name-form,
+.greeting-message {
+    display: none;
+}
+
+.show {
+  display: block;
+}
+
